@@ -2,28 +2,55 @@
 <html>
 
 <head>
-    <title>Earthquake Data</title>
-    <link rel='stylesheet' href='style.css' />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Earthquake Data</title>
+  <link rel='stylesheet' href='style.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1 class='text-center'>Earthquake Data</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
 
-        <div id="map"></div>
+        <div class="tabbable-panel">
+          <div class="tabbable-line">
+            <h1 class='text-center'>Earthquake Data</h1>
+            <ul class="nav nav-tabs ">
+              <li>
+                <a href="index-hourly.html">
+                  Hourly</a>
+                </li>
+                <li class="active">
+                  <a href="index.html">
+                    Daily  </a>
+                  </li>
+                  <li>
+                    <a href="index-weekly.html">
+                      Weekly </a>
+                    </li>
+                    <li>
+                      <a href="index-monthly.html">
+                        Monthly </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="map"></div>
 
+          <script src="script.js"></script>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKPwXR1x5OTylyViPED1FMBaPXWulR_rg&libraries=visualization&callback=initMap">
+          </script>
+        </body>
 
-    <script src="script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKPwXR1x5OTylyViPED1FMBaPXWulR_rg&libraries=visualization&callback=initMap">
-    </script>
-</body>
-
-</html>
+        </html>
