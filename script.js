@@ -6,7 +6,7 @@ function initMap() {
         mapTypeId: 'terrain'
     });
 
-    $.get("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson", function (data, status) {
+    $.get("http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson", function (data, status) {
         console.log(data);
         function eqfeed_callback(results) {
             var heatmapData = [];
